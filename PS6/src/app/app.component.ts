@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ACTIVITY} from './ACTIVITY';
+import { ACTIVITIES} from './ACTIVITY-MOCK';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PS6';
+  activities = ACTIVITIES;
+  currentAct: ACTIVITY;
+
+  selectAct(activity:ACTIVITY){
+    this.currentAct = activity;
+  }
+
 }

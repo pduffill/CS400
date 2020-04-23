@@ -3,4 +3,13 @@
     My first Angular App! {{ title }}
   </h1>
 
+  <div>
+    <ul>
+      <li *ngFor = "let activity of activities">
+        <button (click)= "selectAct(activity)">{{activity.activity}}</button>
+      </li>
+    </ul>
+  </div>
+  
+
 </div>
